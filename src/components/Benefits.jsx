@@ -1,4 +1,4 @@
-import vectorBg from "../assets/Vector-bg.png";
+import vectorBg from "../assets/vector-bg.png";
 import { HeartPulse, Clock3, PawPrint } from "lucide-react";
 
 const benefits = [
