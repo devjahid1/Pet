@@ -73,7 +73,7 @@ const Hero = () => {
             <img
               src={doctor}
               alt="doctor"
-              className="absolute -right-35 top-0 w-44 lg:w-56"
+              className="absolute -right-31 top-0 w-44 lg:w-56"
             />
 
             <img
