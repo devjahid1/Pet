@@ -181,7 +181,7 @@ const Hero = () => {
                 </h3>
 
                 <p className="text-gray-600">
-                  We will contact you soon regarding your request.
+                  We will contact you soon regarding your request...
                 </p>
               </div>
             )}
