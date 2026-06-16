@@ -6,15 +6,14 @@ const testimonials = [
     role: "Tech Enthusiast & Pet Owner",
   },
   {
-    name: "Jordan L.",
-    role: "Tech Enthusiast & Pet Owner",
+    name: "Rimon ",
+    role: "Pet Owner",
   },
   {
-    name: "Jordan L.",
-    role: "Tech Enthusiast & Pet Owner",
+    name: "Morgan",
+    role: "Pet Owner",
   },
 ];
-
 const Testimonials = () => {
   return (
     <section id="testimonials" className="bg-[##ffffff] py-24 overflow-hidden">
