@@ -1,26 +1,29 @@
+import logo from "../assets/dlogo.png";
 const Footer = () => {
   return (
-    <footer className="bg-[#00253D] text-white py-16">
+    <footer className="bg-[#041d2e] text-white py-16 mt-3">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-12">
           {/* Logo + Description */}
           <div>
-            <h2 className="text-4xl font-bold mb-6">
-              PUP<span className="text-[#D89B5A]">🐶</span>CLUB
-            </h2>
+            <div className="flex items-center">
+              <img
+                src={logo}
+                alt="PupClub Logo"
+                className="h-12 w-auto"
+              />
+            </div>
 
             <p className="text-gray-300 leading-8 max-w-sm">
-              If you notice anything that concerns your dog's health,
-              feel free to ask our AI vet. We are always here to help
-              you keep your pet healthy and happy.
+              If you notice anything that concerns your dog's health, feel free
+              to ask our AI vet. We are always here to help you keep your pet
+              healthy and happy.
             </p>
           </div>
 
           {/* Navigation */}
           <div>
-            <h3 className="text-xl font-semibold mb-5">
-              Navigation
-            </h3>
+            <h3 className="text-xl font-semibold mb-5">Navigation</h3>
 
             <ul className="space-y-3 text-gray-300">
               <li>
@@ -51,9 +54,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-xl font-semibold mb-5">
-              Services
-            </h3>
+            <h3 className="text-xl font-semibold mb-5">Services</h3>
 
             <ul className="space-y-3 text-gray-300">
               <li>AI Vet Chat</li>
@@ -66,7 +67,17 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="border-t border-slate-700 mt-12 pt-6 text-center text-gray-400">
-          © 2026 PupClub. All Rights Reserved.
+          <p className="text-sm text-gray-400 text-center">
+            Crafted with ❤️ by{" "}
+            <a
+              href="https://krafticode.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-[#ffffff] hover:underline"
+            >
+              Krafti Code
+            </a>
+          </p>
         </div>
       </div>
     </footer>
