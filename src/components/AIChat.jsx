@@ -2,28 +2,30 @@ import { Menu, Search, Maximize, Smile, Link2, Mic } from "lucide-react";
 
 const AIChat = () => {
   return (
-    <section className="bg-[#ffffff] py-24">
-      <div className="max-w-7xl mx-auto px-6">
+<section className="bg-[#ffffff] py-12 md:py-24">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* LEFT CONTENT */}
           <div>
-            <h2 className="text-[60px] leading-[1.15] font-bold text-[#333] max-w-md">
+            <h2 className="text-4xl sm:text-5xl lg:text-[60px] leading-tight font-bold text-[#333] max-w-md">
               Ask your questions to our AI vet?
             </h2>
 
-            <p className="mt-10 text-gray-600 text-lg max-w-xs leading-9">
+            <p
+  className="mt-6 md:mt-10 text-gray-600 text-base md:text-lg max-w-md leading-7 md:leading-9"
+  style={{ fontFamily: "Poppins, sans-serif" }}
+>
               If you notice anything that concerns your dogs health,
               feel free to ask our AI in the following chat.
               It will be able to help you in these cases.
             </p>
           </div>
 
-          {/* CHAT UI */}
-          <div className="bg-[#242A31] rounded-2xl p-4 h-[480px]">
+         <div className="bg-[#242A31] rounded-2xl p-4 h-[480px]">
 
-            <div className="grid grid-cols-[170px_1fr] h-full">
+            <div className="grid grid-cols-[140px_1fr] h-full">
 
               {/* SIDEBAR */}
               <div className="border-r border-slate-600 pr-3">
@@ -71,7 +73,7 @@ const AIChat = () => {
               </div>
 
               {/* CHAT AREA */}
-              <div className="relative pl-4">
+              <div className="relative pl-2">
 
                 <div className="flex justify-between">
                   <div className="text-white font-bold text-xl">
@@ -85,7 +87,7 @@ const AIChat = () => {
                 </div>
 
                 {/* Message Box */}
-                <div className="absolute bottom-0 left-4 right-0">
+                <div className="absolute bottom-0 -left-2 lg:left-3 sm: right-0">
 
                   <div className="flex items-center gap-3">
 
