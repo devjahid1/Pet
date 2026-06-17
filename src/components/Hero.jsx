@@ -21,30 +21,34 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="max-w-7xl mx-auto px-6 lg:px-10 pt-10 pb-20"
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pt-6 md:pt-10 pb-12 md:pb-20"
+        style={{ fontFamily: "Quicksand, sans-serif" }}
       >
-        <div className="grid lg:grid-cols-2 gap-10 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
           {/* LEFT */}
           <div>
-            <h1 className="text-5xl lg:text-7xl font-extrabold leading-tight text-[#333]">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-tight text-[#333]">
               Make your
               <br />
               dog healthier
             </h1>
 
-            <p className="mt-5 text-gray-500 max-w-md">
+            <p
+              className="mt-4 md:mt-5 text-gray-500 max-w-md text-sm sm:text-base"
+              style={{ fontFamily: "Poppins, sans-serif" }}
+            >
               Data doesn't lie. Extend your dog's healthy years with a vet in
               your pocket.
             </p>
 
-            <button
-              onClick={() => setOpenModal(true)}
-              className="mt-8 bg-[#C98A47] text-white px-7 py-4 rounded-lg font-semibold hover:scale-105 transition"
-            >
+<button
+  onClick={() => setOpenModal(true)}
+  className="mt-6 md:mt-8 bg-[#C98A47] text-white px-6 py-3 md:px-7 md:py-4 rounded-lg font-semibold hover:scale-105 transition"
+>
               Get Advice
             </button>
 
-            <div className="grid grid-cols-3 gap-6 mt-16">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-10 md:mt-16">
               <div>
                 <div className="text-4xl">🤖</div>
                 <p className="text-xs mt-2 text-gray-600">
@@ -70,11 +74,11 @@ const Hero = () => {
 
           {/* RIGHT */}
           <div className="relative">
-            <img
-              src={doctor}
-              alt="doctor"
-              className="absolute -right-35 top-0 w-44 lg:w-56"
-            />
+<img
+  src={doctor}
+  alt="doctor"
+  className="absolute -right-0 md:-right-5 lg:-right-[124px] top-0 w-24 sm:w-32 lg:w-56"
+/>
 
             <img
               src={heroDog}
@@ -95,10 +99,7 @@ const Hero = () => {
                   Get Expert Advice 🐶
                 </h2>
 
-                <form
-                  onSubmit={handleSubmit}
-                  className="space-y-4"
-                >
+                <form onSubmit={handleSubmit} className="space-y-4">
                   <input
                     type="text"
                     placeholder="Your Name"

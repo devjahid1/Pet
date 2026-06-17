@@ -1,5 +1,9 @@
 import petImg from "../assets/pet-demo.png";
 
+const pixelFont = {
+  fontFamily: "Pixelify Sans, sans-serif",
+};
+
 const statusData = [
   { title: "Health", active: 10, color: "bg-green-600" },
   { title: "Hunger", active: 4, color: "bg-[#8F2A2A]" },
@@ -58,22 +62,25 @@ const activities = [
 
 const PetDashboard = () => {
   return (
-    <section id="about" className="bg-[#F6F3EF] py-20">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="about" className="bg-[#F6F3EF] py-12 md:py-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="text-center mb-14">
-          <h2 className="text-5xl font-bold text-[#333]">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#333]">
             Take care of your Dog!
           </h2>
 
-          <p className="mt-4 text-gray-500 max-w-xl mx-auto">
+          <p
+            className="mt-4 text-gray-500 max-w-xl mx-auto text-sm sm:text-base"
+            style={{ fontFamily: "Poppins, sans-serif" }}
+          >
             PupClub is an AI vet that never miss any important data and is
             always there for your dog
           </p>
         </div>
 
         {/* Top Dashboard */}
-        <div className="grid grid-cols-12 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6" style={pixelFont}>
           {/* Status */}
           <div className="col-span-12 lg:col-span-3">
             <h3 className="text-center text-[#0A5B92] text-3xl font-bold mb-4">
@@ -147,7 +154,7 @@ const PetDashboard = () => {
         </div>
 
         {/* Bottom Area */}
-        <div className="grid grid-cols-12 gap-6 mt-8">
+        <div className="grid grid-cols-12 gap-6 mt-8" style={pixelFont}>
           {/* Actions */}
           <div className="col-span-12 lg:col-span-8 border-2 border-[#0A5B92] rounded-2xl p-6 bg-white">
             <h3 className="text-center text-[#0A5B92] text-4xl font-bold mb-8">
@@ -179,9 +186,7 @@ const PetDashboard = () => {
 
           {/* Rewards */}
           <div className="col-span-12 lg:col-span-4 border-2 border-[#0A5B92] rounded-2xl p-5 bg-white">
-            <h3 className="text-[#0A5B92] text-3xl font-bold mb-6">
-              Rewards
-            </h3>
+            <h3 className="text-[#0A5B92] text-3xl font-bold mb-6">Rewards</h3>
 
             {rewards.map((item, idx) => (
               <div key={idx} className="mb-8">

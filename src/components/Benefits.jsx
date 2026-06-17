@@ -24,7 +24,10 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <section id="benefits" className="relative min-h-[900px] py-28 overflow-hidden">
+<section
+  id="benefits"
+  className="relative py-16 md:py-28 overflow-hidden"
+>
       {/* Background Shape */}
       <img
         src={vectorBg}
@@ -32,9 +35,9 @@ const Benefits = () => {
         className="absolute inset-0 w-full h-full object-fill -z-10"
       />
 
-      <div className="max-w-7xl mx-auto px-6">
+<div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Title */}
-        <h2 className="text-center text-4xl md:text-5xl font-bold text-[#1F1F1F] mb-24">
+        <h2 className="text-center text-xl sm:text-4xl md:text-5xl font-bold text-[#1F1F1F] mb-12 md:mb-24">
           Medical benefits of Pup Club
         </h2>
 
@@ -44,17 +47,17 @@ const Benefits = () => {
             <div
               key={index}
               className="
-                bg-[#F8F5F1]
-                rounded-xl
-                p-10
-                text-center
-                shadow-sm
-                min-h-[420px]
-                flex
-                flex-col
-                items-center
-                justify-start
-              "
+  bg-[#F8F5F1]
+  rounded-xl
+  p-10
+  text-center
+  shadow-sm
+  min-h-[420px]
+  flex
+  flex-col
+  items-center
+  justify-start
+"
             >
               {/* Icon */}
               <div className="text-[#C98A47] mb-8">
@@ -67,7 +70,7 @@ const Benefits = () => {
               </h3>
 
               {/* Description */}
-              <p className="text-gray-600 leading-8 text-lg">
+              <p className="text-gray-600 leading-8 text-lg" style={{ fontFamily: "Poppins, sans-serif" }}>
                 {benefit.description}
               </p>
             </div>
