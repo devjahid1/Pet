@@ -1,7 +1,9 @@
 import { useState } from "react";
 import heroDog from "../assets/hero-dog.png";
 import doctor from "../assets/doctor.png";
-
+import img1 from "../assets/Vector.png"
+import img2 from "../assets/pajamas_status-health.png"
+import img3 from "../assets/Group.png"
 const Hero = () => {
   const [openModal, setOpenModal] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -50,22 +52,22 @@ const Hero = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-10 md:mt-16">
               <div>
-                <div className="text-4xl">🤖</div>
-                <p className="text-xs mt-2 text-gray-600">
+                <div className=""><img src={img3} alt="" /></div>
+                <p className="text-xs mt-2 text-gray-600 w-27.5">
                   This Service is powered by AI
                 </p>
               </div>
 
               <div>
-                <div className="text-4xl">📈</div>
-                <p className="text-xs mt-2 text-gray-600">
+                <div className="text-4xl"><img src={img2} alt="" /></div>
+                <p className="text-xs mt-2 text-gray-600 w-27.5">
                   Track your Dog's health virtually
                 </p>
               </div>
 
               <div>
-                <div className="text-4xl">⭐</div>
-                <p className="text-xs mt-2 text-gray-600">
+                <div className="text-4xl"><img src={img1} alt="" /></div>
+                <p className="text-xs mt-2 text-gray-600 w-27.5">
                   Earn rewards by taking care
                 </p>
               </div>
@@ -77,7 +79,7 @@ const Hero = () => {
 <img
   src={doctor}
   alt="doctor"
-  className="absolute -right-0 md:-right-5 lg:-right-[124px] top-0 w-24 sm:w-32 lg:w-56"
+  className="absolute -right-0 md:-right-5 lg:-right-[127px] top-0 w-24 sm:w-32 lg:w-56"
 />
 
             <img

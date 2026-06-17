@@ -3,12 +3,12 @@ import dogIllustration from "../assets/testimonial-dog.png";
 const testimonials = [
   {
     name: "Jordan L.",
-    desc: "The AI vet gave me instant answers when my dog wasn’t feeling well. It saved me time, reduced stress, and helped me make the right decisions for my pet.",
+    desc: "The AI vet gave me instant answers when my dog wasn’t feeling well. It helped me make the right decisions for my pet.",
     role: "Tech Enthusiast & Pet Owner",
   },
   {
     name: "Rimon",
-    desc: "Getting expert pet advice has never been this easy. The platform is fast, reliable, and always available whenever I need guidance.",
+    desc: "Getting expert pet advice has never been this easy. The platform always available whenever I need guidance.",
     role: "Pet Owner",
   },
   {
@@ -20,7 +20,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="bg-[##ffffff] md:py-24 overflow-hidden">
+    <section id="testimonials" className="bg-[#ffffff] md:py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative">
 
         {/* Title */}
@@ -37,18 +37,19 @@ const Testimonials = () => {
   className="
     hidden lg:block
     absolute
-    right-[-80px]
-    xl:right-[-120px]
-    top-0
-    w-[380px]
-    xl:w-[520px]
+    -right-20
+    xl:-right-150
+    lg:-top-40
+    w-95
+    xl:w-250
+
     z-0
   "
 />
 
         {/* Cards */}
         <div
-  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10"
+  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-20 lg:gap-0  relative z-10"
   style={{ fontFamily: "Poppins, sans-serif" }}
 >
 
@@ -59,14 +60,16 @@ className="
   bg-[#4EA8E8]
   rounded-2xl
   p-6 md:p-8
+  lg:-ml-10
   text-center
-  min-h-[320px]
-  md:min-h-[420px]
+  w-94
+  h-108
   flex
   flex-col
-  justify-between
+  
 "
             >
+              <div className="w-71.5">
               <div>
 
                 <div className="text-left text-4xl text-[#0B3350]">
@@ -96,6 +99,7 @@ className="
                 <p className="text-[#18486B] mt-2 text-sm md:text-base">
                   {item.role}
                 </p>
+                </div>
 
               </div>
 

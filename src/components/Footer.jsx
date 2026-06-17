@@ -1,7 +1,7 @@
 import logo from "../assets/dlogo.png";
 const Footer = () => {
   return (
-    <footer className="bg-[#041d2e] text-white py-16 mt-3">
+    <footer className="bg-[#041d2e] text-white py-16 mt-20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-12">
           {/* Logo + Description */}
